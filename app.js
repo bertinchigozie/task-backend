@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const Task = require("./model/taskModel");
 dotenv.config({ path: "./config.env" });
 
-const url = process.env.URL;
+const url = process.env.MAIN_URL;
 
 app.get("/", async (req, res) => {
   try {
